@@ -1,0 +1,215 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPJvTdY4aEV3NWRWGv9Zwrf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/elena1346/Practica-01/blob/main/practica%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 12,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eTI7HNaOSiuo",
+        "outputId": "88600981-ab58-4e43-a0dc-f3fbfbfcd3b7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "El area es de 56 cm cubicos.\n"
+          ]
+        }
+      ],
+      "source": [
+        "base=7\n",
+        "altura=8\n",
+        "area=base*altura\n",
+        "print(f\"El area es de {area} cm cubicos.\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# calcular la suma\n",
+        "print(\"Vamos a calcular la suma de a,b y c.\")\n",
+        "print(\"Cual es el valor de a?\")\n",
+        "a=int(input())\n",
+        "print(\"Cual es el valor de b?\")\n",
+        "b=int(input())\n",
+        "print(\"Cual es el valor de c?\")\n",
+        "c=float(input())\n",
+        "resultado=a+b+c\n",
+        "print(f\"La suma de es {resultado}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "p0yIaYybUJQu",
+        "outputId": "15f5d971-ac17-4cc8-edf8-a1d081c8d18b"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Vamos a calcular la suma de a,b y c.\n",
+            "Cual es el valor de a?\n",
+            "2\n",
+            "Cual es el valor de b?\n",
+            "3\n",
+            "Cual es el valor de c?\n",
+            "8\n",
+            "La suma de es 13.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"a\" in \"casa\"\n",
+        "cadena=(input(\"Donde lo buscamos?\"))\n",
+        "subcadena=(input(\"Que buscamos?\"))\n",
+        "subcadena in cadena\n",
+        "contador=cadena.count(subcadena)\n",
+        "print(f\"A aprece en casa {contador} veces.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "liPsfkFTbAeL",
+        "outputId": "089ba590-d9a1-43c4-8a6f-cfe92723c88a"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Donde lo buscamos?casa\n",
+            "Que buscamos?a\n",
+            "A aprece en casa 2 veces.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "MfTpJVmgdJjU"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Ejercicios\n",
+        "\n",
+        "Escribe un programa que dadas dos cadenas te muestre por pantalla el número de veces que aparece una cadena dentro de la otra.\n",
+        "\n",
+        "Escribe un programa que dada una letra minúscula muestre por pantalla la correspondiente letra mayúscula."
+      ],
+      "metadata": {
+        "id": "zxrTnKmNdKRc"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Ingrese el texto.\")\n",
+        "cadena=(input())\n",
+        "print(\"Ingrese el elemento a buscar.\")\n",
+        "subcadena=(input())\n",
+        "contador=cadena.count(subcadena)\n",
+        "print(f\"El elemento aparece {contador} veces.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "m5poP2GPdOGJ",
+        "outputId": "6661f86a-1a7c-43b6-ead6-ef3b0e5afb1e"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el texto.\n",
+            "hoy hace frio\n",
+            "Ingrese el elemento a buscar.\n",
+            "frio\n",
+            "El elemento aparece 1 veces.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Dime una letra minuscula, y te digo la mayuscula.\")\n",
+        "Letra=(input())\n",
+        "LETRA=Letra.upper()\n",
+        "print(f\"La letra mayuscula es {LETRA}.\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ch_jcWo0ebsr",
+        "outputId": "55e4ee42-0beb-411f-ec8f-1330afe448e4"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Dime una letra minuscula, y te digo la mayuscula.\n",
+            "d\n",
+            "La letra mayuscula es D.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "3ne-WdgIXM1H"
+      }
+    }
+  ]
+}
